@@ -1,39 +1,123 @@
-
-/* 1. Make body a flex container in column direction */
 body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh; /* Fill the full height of the viewport */
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
     margin: 0;
+    padding: 0;
 }
 
-/* 2. Make main a flex container in row direction */
-main {
-    display: flex;
-    flex-direction: row;
-    flex: auto; /* Allow it to grow and fill available space */
-}
-
-/* 3. Make article take 2/3 of space */
-article {
-    flex: 2;
-    overflow-y: auto;
-    padding: 16px;
-    background-color: #fff;
-}
-
-
-aside {
-    flex: 1;
-    overflow-y: auto;
-    padding: 16px;
-    background-color: #f0f0f0;
-}
-
-
-header, footer {
-    background-color: #333;
+/* Header */
+header {
+    background-color: #003366;
     color: white;
     padding: 20px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    margin-right: 20px;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Layout container */
+.main {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Navigation */
+nav {
+    width: 200px;
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+/* Article content */
+article {
+   
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+   
+}
+
+/* Aside section */
+aside {
+    /* width: 200px; */
+    margin: 40px auto;
+     max-width: 800px;
+    background-color: #f1f3f5;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 0.9em;
+    color: #444;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f4f7;
+    color: #333;
+}
+
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
     text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    nav,
+    aside {
+        width: 100%;
+    }
 }
