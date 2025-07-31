@@ -1,0 +1,191 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: white;
+  background-color: black;
+}
+
+/* HEADER/NAVIGATION */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  background: transparent;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+nav img {
+  height: 50px;
+  width: 150px;
+  object-fit: contain;
+  margin-left: 290px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  margin-right: 290px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+  line-height: 50px;
+  display: block;
+  height: 50px;
+  padding: 0 10px;
+  transition: color 0.2s ease;
+}
+
+nav ul li a:hover {
+  color: #C271FF;
+}
+
+/* HERO SECTION */
+.hero {
+  background-image: url('../images/Object.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 120px 20px 60px;
+  position: relative;
+}
+
+/* HERO TEXT */
+.hero-content {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-content h1 {
+  font-size: 100px;
+  margin-top: 90px;
+}
+
+.hero-tags {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  margin-bottom: 100px;
+  padding: 10px 25px;
+  font-size: 10px;
+  font-weight: bold;
+  background-color: #C271FF;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* LEARN FROM THE PROS SECTION */
+.pros {
+  margin-top: 50px; /* Increase if you want more space below hero */
+  /* padding: 0 40px 80px; */
+}
+
+.pros h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.highlight {
+  color: #C271FF;
+}
+
+.pros-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.pro-card {
+  text-align: center;
+  max-width: 160px;
+}
+
+.pro-card img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.pro-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.pro-card p {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #fff;
+  opacity: 0.8;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+    gap: 10px;
+  }
+
+  nav ul {
+    gap: 15px;
+    height: auto;
+  }
+
+  header img {
+    width: 120px;
+    height: auto;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-tags {
+    font-size: 1rem;
+    gap: 20px;
+  }
+
+  .cta-button {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+  }
+}
