@@ -1,4 +1,4 @@
-SmileSchool Landing Page
+## SmileSchool Landing Page
 Welcome to the SmileSchool Landing Page — a clean, responsive, and professional HTML-based project designed to showcase the fun and value of mastering your smile through online tutorials and resources.
 
 ## Project Overview
