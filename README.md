@@ -23,3 +23,39 @@ This is a multi-section landing page for a fictional service called SmileSchool 
 ## File Structure
 index.css
 style.css
+
+
+## Headphones Webpage Implementation
+Overview
+This project is a from-scratch implementation of a designer-provided webpage using only HTML and CSS.
+It follows semantic markup, accessibility best practices, and responsive design principles to create a visually accurate and user-friendly page.
+
+## Restrictions
+No external CSS frameworks (e.g., Bootstrap, Tailwind).
+
+No JavaScript — all functionality and interactions are implemented using only HTML and CSS.
+
+## Features
+Pixel-perfect layout based on the provided design file.
+
+Fully responsive design for mobile, tablet, and desktop.
+
+Accessible structure for screen readers and keyboard navigation.
+
+## Technologies Used
+HTML5 — Semantic and accessible markup.
+
+CSS3 — Custom styling with responsive media queries.
+
+## Getting Started
+Clone or download this repository.
+
+Open index.html in any modern browser.
+
+Resize the browser window to see the responsive layout in action.
+
+## Project Structure
+css
+Copy code
+index.html     → Main HTML page
+styles.css     → Styling rules for layout and responsiveness
