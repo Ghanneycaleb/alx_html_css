@@ -1,5 +1,5 @@
 # alx_html_css
-# SmileSchool Landing Page
+<!-- # SmileSchool Landing Page
 
 Welcome to the SmileSchool Landing Page — a clean, responsive, and professional HTML-based project designed to showcase the fun and value of mastering your smile through online tutorials and resources.
 
@@ -22,7 +22,7 @@ This is a multi-section landing page for a fictional service called SmileSchool 
 
 ## File Structure
 index.css
-style.css
+style.css -->
 
 
 ## Headphones Webpage Implementation
