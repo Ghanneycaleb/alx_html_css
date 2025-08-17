@@ -1,0 +1,426 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Custom Font: Source Sans Pro ===== */
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../source-sans-pro/SourceSansPro-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../source-sans-pro/SourceSansPro-Semibold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ===== Variables ===== */
+:root {
+  --primary-color: #FF6565;
+  --text-color: #fff;
+  --max-width: 1000px;
+  --header-height: 80px;
+}
+
+/* ===== Base Styles ===== */
+body {
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  color: var(--text-color);
+  background-color: #000;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== Header ===== */
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+/* ===== Logo ===== */
+.logo img {
+  height: 32px;
+  width: auto;
+}
+
+/* ===== Hamburger Menu ===== */
+.hamburger {
+  display:none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 2000;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: var(--text-color);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+/* Hamburger Animation */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* ===== Navigation ===== */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li {
+  margin: 0;
+}
+
+.main-nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: lowercase;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+  color: var(--primary-color);
+}
+
+.main-nav a:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  background: url('../IMG-2/images/headphones_hero_1.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  margin-top: 350px;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: var(--primary-color);
+  color: var(--text-color);
+  padding: 13px 31px;
+  border-radius: 22px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 65px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-btn:hover,
+.cta-btn:focus {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 101, 101, 0.3);
+}
+
+.cta-btn:focus {
+  outline: 2px solid var(--text-color);
+  outline-offset: 2px;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.625;
+  max-width: 637px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+}
+/* ===== Tablet Styles ===== */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .main-nav ul {
+    gap: 30px;
+  }
+  
+  .hero-content h1 {
+    font-size: 28px;
+  }
+  
+  .subtitle {
+    font-size: 15px;
+  }
+  
+  .description {
+    font-size: 15px;
+  }
+}
+
+/* ===== Mobile Styles ===== */
+@media (max-width: 480px) {
+  .site-header {
+    padding: 15px 0;
+  }
+
+  .nav-container {
+    position: relative;
+  }
+
+  /* Hamburger on the left */
+  .hamburger {
+    display: flex !important;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  /* Logo centered */
+  .logo {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Navigation hidden by default */
+  .main-nav {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    /* background: rgba(0, 0, 0, 0.95); */
+    border-radius: 8px;
+    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); */
+    z-index: 999;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 20px;
+    list-style: none;
+
+    /* Hidden by default */
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.4s ease;
+  }
+
+  /* Show when toggled */
+  .main-nav ul.show-menu {
+    max-height: 300px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .main-nav li {
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .main-nav li:last-child {
+    border-bottom: none;
+  }
+
+  .main-nav a {
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    color: var(--text-color);
+    text-decoration: none;
+  }
+
+  .main-nav a:hover {
+    background: rgba(255, 101, 101, 0.1);
+    border-radius: 4px;
+  }
+}
+
+@media (min-width: 625px) and (max-width: 772px) {
+  .site-header {
+    padding: 15px 0;
+  }
+
+  .nav-container {
+    position: relative;
+  }
+
+  /* Hamburger on the left */
+  .hamburger {
+    display: flex !important;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  /* Logo centered */
+  .logo {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Navigation hidden by default */
+  .main-nav {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 20px;
+    list-style: none;
+
+    /* Hidden by default */
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.4s ease;
+  }
+
+  /* Show when toggled */
+  .main-nav ul.show-menu {
+    max-height: 300px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .main-nav li {
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .main-nav li:last-child {
+    border-bottom: none;
+  }
+
+  .main-nav a {
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    color: var(--text-color);
+    text-decoration: none;
+  }
+
+  .main-nav a:hover {
+    background: rgba(255, 101, 101, 0.1);
+    border-radius: 4px;
+  }
+}
+
+/* ===== Small Mobile Styles ===== */
+@media (max-width: 320px) {
+  .container {
+    padding: 0 10px;
+  }
+  
+  .hero-content h1 {
+    font-size: 18px;
+  }
+  
+  .subtitle {
+    font-size: 13px;
+  }
+  
+  .description {
+    font-size: 13px;
+  }
+}
