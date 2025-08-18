@@ -1,0 +1,73 @@
+/* What we do section */
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../source-sans-pro/SourceSansPro-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../source-sans-pro/SourceSansPro-Semibold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  color: var(--text-color);
+  background-color: #000;
+  line-height: 1.6;
+}
+
+.what-we-do {
+  background: #fff; /* white background */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.what-we-do h2 {
+  color: rgb(26, 26, 31);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.what-we-do .intro {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Services grid */
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.service {
+  flex: 1 1 200px; /* responsive box */
+  max-width: 220px;
+  text-align: center;
+}
+
+.service .icon {
+  font-size: 50px;
+  color: #FF6565; /* hot pink / accent color */
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.service h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.service p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.4;
+}

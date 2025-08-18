@@ -1,0 +1,113 @@
+/* Footer */
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../source-sans-pro/SourceSansPro-Semibold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../source-sans-pro/SourceSansPro-Light.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  color: var(--text-color);
+  background-color: #000;
+  line-height: 1.6;
+}
+
+
+.footer {
+  height: 150px;
+  background-color: #0a0f1a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.footer-left img {
+  width: 250px; 
+}
+
+.footer-center {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-right a {
+  position: relative;
+  margin-left: 15px;
+  font-size: 20px;
+  color:black;
+  background: white;
+  padding: 15px;
+  border-radius: 100px;
+  transition: 0.3s ease;
+}
+
+.footer-right a:hover {
+  background: #007bff; 
+  color: #fff;
+}
+
+
+@keyframes floatBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Fade-in + scale on load */
+@keyframes fadeScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+.what-we-do .item,
+.our-results .item {
+  animation: fadeScale 1s ease forwards, floatBounce 3s ease-in-out infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.what-we-do .item:hover,
+.our-results .item:hover {
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer Social Icons Animation */
+.footer-right a {
+  color: white;
+  margin: 0 10px;
+  font-size: 20px;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-right a:hover {
+  color: #ff4081; /* highlight color */
+  transform: scale(1.2) rotate(10deg);
+}

@@ -1,0 +1,88 @@
+/* Contact Section */
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../source-sans-pro/SourceSansPro-Semibold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../source-sans-pro/SourceSansPro-Light.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+body {
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  color: var(--text-color);
+  background-color: #000;
+  line-height: 1.6;
+}
+
+.contact {
+  padding: 80px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #0a1a2f;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form label {
+  font-size: 0.95rem;
+  color: #0a1a2f;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 5px;
+  font-size: 1rem;
+  outline: none;
+  background: transparent;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-bottom: 1px solid #ff5a5f;
+}
+
+/* CTA Button (reused style from hero) */
+.cta-btn {
+  background-color: #ff5a5f;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  align-self: center;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #e14a4e;
+}

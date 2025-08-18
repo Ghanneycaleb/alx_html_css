@@ -5,9 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Headphones</title>
   <link rel="stylesheet" href="0-styles.css">
+   <link rel="stylesheet" href="1-styles.css">
+    <link rel="stylesheet" href="2-styles.css">
+    <link rel="stylesheet" href="3-index.css">
+    <link rel="stylesheet" href="4-index.css">
+    <link rel="stylesheet" href="6-index.css">
+    <link rel="stylesheet" href="7-index.css">
+    <link rel="stylesheet" href="8-index.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../holberton_school-icon/style.css">
+  
+  
 </head>
 <body>
-  <header class="site-header">
+  <!-- <header class="site-header">
     <div class="container nav-container">
       <div class="logo">
         <img src="../IMG-2/images/logo_headphones.png" alt="Headphones Logo">
@@ -39,7 +50,160 @@
         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
       </p>
     </div>
+  </section> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Headphones</title>
+  <link rel="stylesheet" href="0-styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <!-- CSS-Only Toggle: Hidden checkbox -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      
+      <!-- Hamburger Label (clickable) -->
+      <label for="menu-toggle" class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      
+      <div class="logo">
+        <img src="../IMG-2/images/logo_headphones.png" alt="Headphones Logo">
+      </div>
+      
+      <!-- Navigation Menu -->
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">what we do</a></li>
+          <li><a href="#">our results</a></li>
+          <li><a href="#">contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="container hero-content">
+      <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
+      <p class="subtitle">Lorem ipsum dolor set amet lorem ipsum dolor set</p>
+      <a href="#" class="cta-btn">Call to Action</a>
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+    </div>
   </section>
+</body>
+</html>
+
+  <section class="what-we-do">
+  <div class="container">
+    <h2>What we do…</h2>
+    <p class="intro">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+
+    <div class="services">
+      <div class="service">
+        <span class="icon holberton_school-icon-ic_sound"></span>
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="service">
+        <span class="icon holberton_school-icon-ic_video"></span>
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="service">
+        <span class="icon holberton_school-icon-ic_music"></span>
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="service">
+        <span class="icon holberton_school-icon-ic_hearing"></span>
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="our-results">
+  <div class="overlay"></div>
+  <div class="container">
+    <h2>Our results speak for themselves</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+      voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+
+    <div class="results-cards">
+      <div class="result-card">
+        <h3>+2%</h3>
+        <p>Lorem ipsum dolor</p>
+      </div>
+      <div class="result-card">
+        <h3>+2%</h3>
+        <p>Lorem ipsum dolor</p>
+      </div>
+      <div class="result-card">
+        <h3>+2%</h3>
+        <p>Lorem ipsum dolor</p>
+      </div>
+      <div class="result-card">
+        <h3>+2%</h3>
+        <p>Lorem ipsum dolor</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="contact">
+  <div class="container">
+    <h2>Contact us</h2>
+    <form class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your message</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit" class="cta-btn">Call to Action</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-left">
+    <img src="../IMG-2/images/logo_headphones.png" alt="Logo" class="footer-logo">
+  </div>
+
+  <div class="footer-center">
+    <p>&copy; Headphones 2020.</p>
+  </div>
+
+  <div class="footer-right">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+  </div>
+</footer>
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const hamburger = document.querySelector('.hamburger');
@@ -108,3 +272,6 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 </body>
 </html>
+
+
+
